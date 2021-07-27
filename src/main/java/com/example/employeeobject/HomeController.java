@@ -17,7 +17,7 @@ public class HomeController {
         return "employeeobjectform";
     }
 
-    @PostMapping("/songform")
+    @PostMapping("/employeeobjectform")
     public String loadFromPage(@ModelAttribute EmployeeObject employeeObject, Model model){
         model.addAttribute("employeeobject", employeeObject);
         return "confirmemployeeobject";
